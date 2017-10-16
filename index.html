@@ -1,68 +1,53 @@
 <head> 
+  <title> It's muffin time! </title>
+  <link rel="stylesheet" type="text/css" href="stle.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css" rel="stylesheet" type="text/css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.js"></script> 
 </head>
-<style type="text/css">
-#sitebody{
-　width:600px;
-　margin:0 auto;
-　font-size:13px;
-}
-#header{
-　background-color:#FFD4D4;
-　height:80px;
-　text-align:center;
-　line-height:80px;
-}
-#sidebar_left{
-　background-color:#FFECC9;
-　width:120px;
-　height:400px;
-　text-align:center;
-　line-height:400px;
-　float:left;
-}
-#sidebar_right{
-　background-color:#FFECC9;
-　width:120px;
-　height:400px;
-　text-align:center;
-　line-height:400px;
-　float:right;
-}
-#content{
-　margin-left:120px;
-　margin-right:120px;
-　height:400px;
-　background-color:#F2FFF2;
-　text-align:center;
-　line-height:400px;
-}
-#footer{
-　clear:both;
-　background-color:#FFD4D4;
-　height:80px;
-　text-align:center;
-　line-height:80px;
-}
-</style>
+
+<header> </header>
 
 <body>
-  <div id="sitebody">
-　<div id="header">header</div>
-　<div id="sidebar_left">sidebar_left</div>
-　<div id="sidebar_right">sidebar_right</div>
-　<div id="content">
-     <center>
-    <a href="https://www.facebook.com/orange.h.chen" title="這是我的FB喔喔喔">
-       <img src="https://i.imgur.com/NO2p3zh.jpg" height="200" width="200" border="0"></a><p>
-    <b> 黃晨昕 </b><br>
-    成功大學 機械工程學系<br>
-      點圖可以連到我的FB喔喔喔<br>
-    <img src="down.jpg" id="photo"></img>
-    </center>
-    </div>
-　<div id="footer">footer</div>
-     
-    </div>
-  </body>
 
+<div id = "introduce"> 
+  <center>
+  <a href = "https://www.facebook.com/orange.h.chen" title="這是我的FB喔喔喔">
 
+  <img src="https://i.imgur.com/NO2p3zh.jpg" height="200" width="200" border="0"></a><p>
+  <b> 黃晨昕 </b><br>
+  成功大學 機械工程學系 <br>
+  <img src = "down.jpg" id="photo"></img>
+  </center>
+</div>
+
+<div class = "anim_box"> 
+  <div class = "left_box">
+    <div class = "leftup"><h1>123</h1></div>
+    <div class = "leftdown">456</div>
+  </div>
+ 
+ <div class = "right_box"> 
+    <div class = "rightup">789</div>
+    <div class = "rightdown">1011</div>
+</div>
+
+<script>
+
+  $('.anim_box').mouseover(() => {
+      $('.leftup').animate({height:232,margin:4})
+      $('.leftdown').animate({height:232})
+      $('.rightup').animate({height:0,margin:'0px 4px'})
+      $('.rightdown').animate({height:472})
+   });
+
+  $(document).click(() => {
+      $('.leftup').animate({height:0,margin:'0px 4px'})
+      $('.leftdown').animate({height:472}) 
+      $('.rightup').animate({height:232,margin:4})
+      $('.rightdown').animate({height:232})
+   });
+
+</script>
+
+</body>
