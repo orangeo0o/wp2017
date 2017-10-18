@@ -20,6 +20,9 @@
   width:480px;
   height:480px;
   background-color:#FFFFFF;
+  text-align:center;
+  line-height:50px;
+  font-size:40px;
   }
 
 .left_box {
@@ -77,4 +80,23 @@
   float:left;
   }
 
+.contentl1{
+  padding:40px;
+  line-height:40px;
+  }
+
+.contentl2{
+  padding:40px;
+  overflow:hidden;
+  }
+
+.contentr1{
+  padding:40px;
+  overflow:hidden;
+  }
+
+.contentr2{
+  padding:40px;
+  overflow:hidden;
+  }
 
