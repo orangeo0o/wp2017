@@ -21,35 +21,72 @@
   </center>
 </div>
 
-<div class = "anim_box">
-<div class = "left_box">
-    <div class = "leftup"><h1>123</h1></div>
-    <div class = "leftdown">456</div>
+
+ <div class = "anim_box"> 
+  <div class = "left_box"> 
+    <div class = "leftup">
+      <p>獅子座
+      <img src="http://www.miankoutu.com/uploadfiles/2015-9-24/2015924121527485.png" width="100px" height="100px"></img>
+    </div>
+    
+    <div class = "leftdown">
+      <div class = "contentl1">
+        <p><img class="ui medium circular image" src="https://i.imgur.com/NO2p3zh.jpg"></p>
+        <b>黃晨昕<p></p></b>
+        <font size="5px">機械工程學系</font>
+      </div>
+     
+     <div class = "contentl2">
+        O 型<p>
+       <img src="http://www.blood.org.tw/Internet/taipei/images/sb-icon-d.svg" width="100px" height="100px"></img>
+      </div>
+   </div>
   </div>
- 
-  <div class = "right_box"> 
-    <div class = "rightup">789</div>
-    <div class = "rightdown">1011</div>
+
+    <div class = "right_box"> 
+     <div class = "rightup">喜歡<br>耍廢<br> 
+       <img src=" https://sdl-stickershop.line.naver.jp/stickershop/v1/sticker/10793297/android/sticker.png" width="70px" height="70px"></img>  
+     </div>
+    
+     <div class = "rightdown">
+       <div class = "contentr1">討厭
+          <img src="http://maoup.com.tw/wp-content/uploads/2015/04/%E8%83%A1%E8%98%BF%E8%94%94.png" width="100px" height="100px"></img>  
+       </div>
+    
+       <div class = "contentr2">
+         不<br>知<br>道<br>要<br>寫<br>什<br>麼<br>惹
+       </div>
+     </div>
+   </div>
+  
   </div>
-</div>
+  
+  <script>
+  $('.contentl1').show();
+  $('.contentl2').hide();
+  $('.contentr1').show();
+  $('.contentr2').hide();
+  
+  $('.anim_box').hover(() => {
+  $('.leftup').animate({height:232,margin:4,padding:40})
+  $('.leftdown').animate({height:232})
+  $('.contentl1').hide();
+  $('.contentl2').show();
+  $('.rightup').animate({height:0,margin:'0px 4px',padding:0})
+  $('.rightdown').animate({height:472})
+  $('.contentr1').hide();
+  $('.contentr2').show();
+  },function(){
+  $('.leftup').animate({height:0,margin:'0px 4px',padding:0})
+  $('.leftdown').animate({height:472})
+  $('.contentl1').show();
+  $('.contentl2').hide();
+  $('.rightup').animate({height:232,margin:4,padding:40})
+  $('.rightdown').animate({height:232})
+  $('.contentr1').show();
+  $('.contentr2').hide();
+  });
+  </script>
+  
+  </body>
 
-
-<script>
-
-  $('.anim_box').mouseover(() => {
-      $('.leftup').animate({height:232,margin:4})
-      $('.leftdown').animate({height:232})
-      $('.rightup').animate({height:0,margin:'0px 4px'})
-      $('.rightdown').animate({height:472})
-   });
-
-  $(document).click(() => {
-      $('.leftup').animate({height:0,margin:'0px 4px'})
-      $('.leftdown').animate({height:472}) 
-      $('.rightup').animate({height:232,margin:4})
-      $('.rightdown').animate({height:232})
-   });
-
-</script>
-
-</body>
